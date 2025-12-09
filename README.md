@@ -158,3 +158,5 @@ Para ejecutar el modelo, se deben tener en cuenta las siguientes consideraciones
 
 ## Resultados obtenidos
 
+A partir del código creado, se obtienen los siguientes resultados:
+
