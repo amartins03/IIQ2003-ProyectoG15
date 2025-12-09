@@ -12,9 +12,7 @@ Este proyecto tiene como objetivo implementar un modelo de transferencia de masa
 
 ## Características del modelo
 
-En este modelo, se estudia la transferencia de masa de oxígeno ($O_2$) dentro de una jaula salmonera cuadrada sumergida en agua de mar, la cual corresponde al sistema del modelo. Este sistema es además replicable para todas las jaulas presentes en una planta salmonera en Puerto Montt. En la siguiente figura se presenta un esquema del sistema modelado:
-
-![Esquema del sistema modelado](Figuras/Esquema.jpeg)
+En este modelo, se estudia la transferencia de masa de oxígeno ($O_2$) dentro de una jaula salmonera cuadrada sumergida en agua de mar, la cual corresponde al sistema del modelo. Este sistema es además replicable para todas las jaulas presentes en una planta salmonera en Puerto Montt.
 
 ### Supuestos del modelo
 
@@ -33,3 +31,16 @@ En este modelo, se estudia la transferencia de masa de oxígeno ($O_2$) dentro d
 * La concentración de oxígeno en el mar es de 6,5 mL/L aproximadamente (rango de 5-8 mL/L), que transformando usando el volumen molar de un gas ideal, se obtiene que es 0,29 molm3  (Silva, 2006, p. 37).
 * La concentración de oxígeno en la interfase aire-agua se estima en $0.329$ mol/m^3 (U.S. Geological Survey, 2018)).
 * La concentración de oxígeno en el fondo se asume mayor que en la interfase, ya que se asume mayor riqueza de oxígeno por biodiversidad, por lo que se asume en $1$ mol/m^3.
+
+### Condiciones de borde
+
+* Condición de borde 1: La concentración de oxígeno en la interfase aire-agua será la concentración del aire. $\omega_A(x, z=0)$=$\omega_{A,aire}$
+* Condición de borde 2: El gradiente de la concentración de oxígeno en el costado derecho de la jaula es $0$. $\omega_{Ax}(x=L,z)$=$0$
+* Condición de borde 3: La concentración de oxígeno al final de la jaula, se considera que es un valor conocido, debido a que se sabe que la biodiversidad del mar genera este mismo. $\omega_A(x,z=H)$=$\omega_{A,fondo}$
+* Condición de borde 4: La concentración de oxígeno en el costado izquierdo de la jaula se conoce, se estima que es la concentración de oxígeno en el mar. $\omega_A(x=0,z)$=$\omega_{A,mar}$
+
+En la siguiente figura, se tiene un esquema que sintetiza algunos de los supuestos y condiciones de borde descritas anteriormente:
+
+![Esquema del sistema modelado](Figuras/Esquema.jpeg)
+
+### Método numérico
