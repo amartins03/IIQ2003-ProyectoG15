@@ -160,4 +160,4 @@ Para ejecutar el modelo, se deben tener en cuenta las siguientes consideraciones
 
 A partir del código creado, se obtienen los siguientes resultados:
 
-![Esquema del sistema modelado](Figuras/DifusionReales.jpeg)
+![Esquema del sistema modelado](Figuras/DifusionReales.png)
