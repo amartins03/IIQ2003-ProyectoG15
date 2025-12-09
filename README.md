@@ -160,3 +160,7 @@ Para ejecutar el modelo, se deben tener en cuenta las siguientes consideraciones
 
 A partir del código creado, se obtienen los siguientes resultados:
 
+![Esquema del sistema modelado](Figuras/DifusiónReales.jpeg)
+![Esquema del sistema modelado](Figuras/ConvecciónReales.jpeg)
+![Esquema del sistema modelado](Figuras/ConvecciónDifusiónReales.jpeg)
+![Esquema del sistema modelado](Figuras/ConvecciónReales.jpeg)
