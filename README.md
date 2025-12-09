@@ -14,8 +14,11 @@ Este proyecto tiene como objetivo implementar un modelo de transferencia de masa
 
 En este modelo, se estudia la transferencia de masa de oxígeno ($O_2$) dentro de una jaula salmonera cuadrada sumergida en agua de mar, la cual corresponde al sistema del modelo. Este sistema es además replicable para todas las jaulas presentes en una planta salmonera en Puerto Montt. 
 
+
+
 ### Supuestos del modelo
 
+* Se considera estado estacionario, por lo que no existe variación de concentración respecto al tiempo.
 * No hay velocidad ni variaciones en el eje $y$.
 * La tasa de adición de oxígeno es $0$, por lo que $\alpha$ se anula.
 * Se modelará sólo una jaula con dimensones $30$ m (largo) x $30$ m (ancho) x $15$ m (profundidad)). Modelar más de una jaula es considerablemente más complejo, ya que una jaula puede recibir agua parcialmente desoxigenada al pasar por las jaulas aguas arriba (Alver et al., 2024).
@@ -28,5 +31,5 @@ En este modelo, se estudia la transferencia de masa de oxígeno ($O_2$) dentro d
 * La concentración inicial se asume igual a $0$.
 * Para la difusión de oxígeno en agua a $13$ °C, se puede estimar que el coeficiente de difusión es de $2*10^{-9}$ m^2/s (Rahlff et al., 2019).
 * La concentración de oxígeno en el mar es de 6,5 mL/L aproximadamente (rango de 5-8 mL/L), que transformando usando el volumen molar de un gas ideal, se obtiene que es 0,29 molm3  (Silva, 2006, p. 37).
-* La concentración de oxígeno en la interfase aire-agua se estima en $0,329$ mol/m^3 (U.S. Geological Survey, 2018)).
-* La concentración de oxígeno en el fondo se asume mayor que en la interfase, ya que se asume mayor riqueza de oxígeno por biodiversidad. Por lo que se asume en 1 molm3.
+* La concentración de oxígeno en la interfase aire-agua se estima en $0.329$ mol/m^3 (U.S. Geological Survey, 2018)).
+* La concentración de oxígeno en el fondo se asume mayor que en la interfase, ya que se asume mayor riqueza de oxígeno por biodiversidad, por lo que se asume en $1$ mol/m^3.
