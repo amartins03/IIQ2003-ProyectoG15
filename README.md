@@ -84,6 +84,8 @@ En la siguiente figura, se tiene un esquema que sintetiza algunos de los supuest
 
 ![Esquema del sistema modelado](Figuras/Esquema2.jpeg)
 
+Este esquema también se encuentra dentro de la carpeta [Figuras](Figuras) del repositorio.
+
 ### Método numérico del modelo
 
 El método numérico a implementar es el método iterativo de sobre-relajación sucesiva (de siglas en inglés SOR), después de aplicar diferencias finitas a la ecuación resultante del modelo.
@@ -140,3 +142,11 @@ Luego, para discretizar las condiciones de borde se usan diferencias finitas de 
    $1\leq j \leq N_{z-1}$
 
 ## Instrucciones de ejecución del modelo
+
+Para ejecutar el modelo, se requiere lo siguiente:
+
+* 
+* 
+* 
+* 
+* 
