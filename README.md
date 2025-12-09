@@ -52,6 +52,6 @@ En este modelo, se estudia la transferencia de masa de oxígeno ($O_2$) dentro d
 
 En la siguiente figura, se tiene un esquema que sintetiza algunos de los supuestos y condiciones de borde descritas anteriormente:
 
-![Esquema del sistema modelado](Figuras/Esquema.jpeg)
+![Esquema del sistema modelado](Figuras/Esquema2.jpeg)
 
 ### Método numérico
