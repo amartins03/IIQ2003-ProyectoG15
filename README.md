@@ -143,10 +143,11 @@ Luego, para discretizar las condiciones de borde se usan diferencias finitas de 
 
 ## Instrucciones de ejecución del modelo
 
-Para ejecutar el modelo, se requiere lo siguiente:
+Para ejecutar el modelo, se deben tener en cuenta las siguientes consideraciones:
 
-* Python, preferiblemente versión 3.13
-* El código se encuentra en formato Jupyter Notebook, por lo que para una mejor experiencia debe ejecutarse en servicios como Google Colab, Jupyter o Microsoft Visual Studio Code.
+* Usar Python como lenguaje de programación, preferiblemente versiones 3.11 o posteriores.
+* Las librerías requeridas para la ejecución del código son matplotlib y numpy.
+* El código fue trabajado en formato Jupyter Notebook, por lo que para una mejor experiencia debe ejecutarse en servicios como Google Colab, Jupyter o Microsoft Visual Studio Code, que permiten leer comentarios entre bloques de código.
 * El código debe ejecutarse en orden, es decir, primero se deben definir las constantes definidas en las primeras líneas de código para luego resolver computacionalmente la discretización y graficar. En caso contrario, la consola arrojará errores relacionados con variables y/o funciones no definidas.
 * Respecto al punto anterior, se recomienda ejecutar el código completo con la función "Ejecutar todo", ya que esta corre desde la primera a la última en orden e ininterrumpidamente.
-* 
+* Para los bloques de discretización, el código usualmente tardará desde 4 a 15 minutos en devolver resultados en la consola, dependiendo de la complejidad del algoritmo.
