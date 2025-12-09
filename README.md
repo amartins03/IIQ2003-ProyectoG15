@@ -150,4 +150,4 @@ Para ejecutar el modelo, se deben tener en cuenta las siguientes consideraciones
 * El código fue trabajado en formato Jupyter Notebook, por lo que para una mejor experiencia debe ejecutarse en servicios como Google Colab, Jupyter o Microsoft Visual Studio Code, que permiten leer comentarios entre bloques de código.
 * El código debe ejecutarse en orden, es decir, primero se deben definir las constantes definidas en las primeras líneas de código para luego resolver computacionalmente la discretización y graficar. En caso contrario, la consola arrojará errores relacionados con variables y/o funciones no definidas.
 * Respecto al punto anterior, se recomienda ejecutar el código completo con la función "Ejecutar todo", ya que esta corre desde la primera a la última en orden e ininterrumpidamente.
-* Para los bloques de discretización, el código usualmente tardará desde 4 a 15 minutos en devolver resultados en la consola, dependiendo de la complejidad del algoritmo.
+* Para los bloques de discretización, el código usualmente tardará desde 4 a 25 minutos en devolver resultados en la consola, dependiendo de la complejidad del algoritmo.
