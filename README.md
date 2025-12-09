@@ -42,7 +42,7 @@ $\beta_{NF}(x, y, z, t) = \frac{1}{VT}$
 
 Por lo tanto, el modelo simplificado con las condiciones, considerando estado estacionario, se reduce a la siguiente expresión:
 
-$V_x\frac{\partial\omega}{\partial x}+V_z\frac{\partial\omega}{\partial z}+\kappa(\frac{\partial^2\omega}{\partial x^2}+\frac{\partial^2\omega}{\partial z^2})=V_{O_2}\cdot N_k\cdot W_k\cdot \frac{1}{VT}$
+$V_x\frac{\partial\omega}{\partial x}+V_z\frac{\partial\omega}{\partial z}+\kappa(\frac{\partial^2\omega}{\partial x^2}+\frac{\partial^2\omega}{\partial z^2})=-V_{O_2}\cdot N_k\cdot W_k\cdot \frac{1}{VT}$
 
 ### Supuestos del modelo
 
@@ -117,10 +117,26 @@ $e=\frac{V_x}{\Delta x}+\frac{V_z}{\Delta z}-\frac{2\kappa}{\Delta x^2}-\frac{2\
 
 $f=-V_{O_2}\cdot N_k\cdot W_k\cdot \frac{1}{VT}$
 
-Luego, para discretizar las condiciones de borde se usan diferencias finitas de segundo orden para las primeras derivadas:
-
 Reordenando y factorizando, se obtiene:
 
 $\omega_{i+1,j} \cdot \frac{\kappa}{\Delta x^2}+\omega_{i-1,j} \cdot (\frac{\kappa}{\Delta x^2}-\frac{V_x}{\Delta x})+\omega_{i,j+1} \cdot \frac{\kappa}{\Delta z^2}+\omega_{i,j-1}\cdot (\frac{\kappa}{\Delta z^2}-\frac{V_z}{\Delta z})+\omega_{i,j}\cdot (\frac{V_x}{\Delta x}+\frac{V_z}{\Delta z}-\frac{2\kappa}{\Delta x^2})-\frac{2\kappa}{\Delta z^2}=0$
+
+Luego, para discretizar las condiciones de borde se usan diferencias finitas de segundo orden para las primeras derivadas:
+
+1. $\omega_A(x, z=0)=\omega_{A,aire} \rightarrow \omega_{i,0}=\omega_{aire}$
+
+   $0\leq i \leq N_{x-1}$
+
+2. $\frac{\partial \omega_A}{\partial x}(x=L,z)=0 \rightarrow \frac{3\omega_{Nx,j}-4\omega_{Nx-1,j}+\omega_{Nx-2,j}}{2\Delta x}=0 \rightarrow \omega_{Nx,j}=\frac{4\omega_{Nx-1,j}+\omega_{Nx-2,j}}{3}$
+
+   $0\leq j \leq N_{z-1}$
+
+3. $\omega_A(x,z=H)=\omega_{A,fondo} \rightarrow \omega_{i, Nz_1} = \omega_{fondo}$
+
+   $0\leq i \leq N_{x-1}$
+
+4. $\omega_A(x=0,z)=\omega_{A,mar} \rightarrow \omega_{0,j}= \omega_{mar}$
+
+   $1\leq j \leq N_{z-1}$
 
 ## Instrucciones de ejecución del modelo
