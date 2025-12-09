@@ -145,8 +145,8 @@ Luego, para discretizar las condiciones de borde se usan diferencias finitas de 
 
 Para ejecutar el modelo, se requiere lo siguiente:
 
-* 
-* 
-* 
-* 
+* Python, preferiblemente versión 3.13
+* El código se encuentra en formato Jupyter Notebook, por lo que para una mejor experiencia debe ejecutarse en servicios como Google Colab, Jupyter o Microsoft Visual Studio Code.
+* El código debe ejecutarse en orden, es decir, primero se deben definir las constantes definidas en las primeras líneas de código para luego resolver computacionalmente la discretización y graficar. En caso contrario, la consola arrojará errores relacionados con variables y/o funciones no definidas.
+* Respecto al punto anterior, se recomienda ejecutar el código completo con la función "Ejecutar todo", ya que esta corre desde la primera a la última en orden e ininterrumpidamente.
 * 
