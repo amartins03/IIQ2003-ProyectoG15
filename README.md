@@ -158,7 +158,25 @@ Para ejecutar el modelo, se deben tener en cuenta las siguientes consideraciones
 
 ## Resultados obtenidos
 
-A partir del código creado, se obtienen los siguientes resultados:
+Con el modelo propuesto, se obtienen los siguientes perfiles de concentración para cada tipo de transporte:
+
+**Transporte difusivo**
 
 ![Esquema del sistema modelado](Figuras/DifusionReales.png)
-![Esquema del sistema modelado](Figuras/ConvecciónReales.png)
+
+Se aprecia una alta concentración de oxígeno en el centro de la jaula, ya que en esta parte es donde existe un mayor consumo de oxígeno que en los bordes, debido a los salmones, lo que genera una diferencia de concentración, lo que a su vez provoca un gradiente por difusión.
+
+Ubicación: [Figuras](Figuras/DifusionReales.png)
+
+**Transporte convectivo**
+
+![Esquema del sistema modelado](Figuras/ConveccionReales.png)
+
+Ubicación: [Figuras](Figuras/ConveccionReales.png)
+
+**Transporte convectivo y difusivo**
+
+![Esquema del sistema modelado](Figuras/ConveccionDifusionReales.png)
+
+Ubicación: [Figuras](Figuras/ConveccionDifusionReales.png)
+
