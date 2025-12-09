@@ -1,4 +1,4 @@
-# IIQ2003-ProyectoG15
+# Proyecto: Transferencia de oxígeno en jaulas de salmones en Chile
 
 ## Contexto y problemática
 
