@@ -172,11 +172,14 @@ Ubicación: [Figuras](Figuras/DifusionReales.png)
 
 ![Esquema del sistema modelado](Figuras/ConveccionReales.png)
 
+Se obtiene una mayor concentración de oxígeno en el fondo y al costado derecho.
+
 Ubicación: [Figuras](Figuras/ConveccionReales.png)
 
 **Transporte convectivo y difusivo**
 
 ![Esquema del sistema modelado](Figuras/ConveccionDifusionReales.png)
 
-Ubicación: [Figuras](Figuras/ConveccionDifusionReales.png)
+En el modelo, en la superficie y en el lado izquierdo existe transporte de oxígeno tanto convectivo como difusivo.
 
+Ubicación: [Figuras](Figuras/ConveccionDifusionReales.png)
