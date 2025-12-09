@@ -2,7 +2,7 @@
 
 ## Contexto y problemática
 
-En Chile, el salmón representa el segundo producto de exportación más relevante del país, siendo la principal industria en la zona sur del país (desde la Región de la Araucanía a  Magallanes). Según el Instituto Nacional de Estadísticas (INE), en el primer semestre de 2025, un 78,1% de las exportaciones regionales de Chile corresponden a productos derivados del selmón, alcanzando un total de 3.000 millones de dólares (INE, 2025). Dentro de esta zona, los centros de producción más relevantes de esta industria se ubican en Puerto Montt (Región de Los Lagos) y en diversos canales en la Región de Aysén.
+En Chile, el salmón representa el segundo producto de exportación más relevante del país, siendo la principal industria en la zona sur del país (desde la Región de la Araucanía a  Magallanes). Según el Instituto Nacional de Estadísticas (INE), en el primer semestre de 2025, un 78,1% de las exportaciones regionales de Chile corresponden a productos derivados del selmón, alcanzando un total de 3.000 millones de dólares (INE, 2025) de ganancias. Dentro de esta zona, los centros de producción más relevantes de esta industria se ubican en Puerto Montt (Región de Los Lagos) y en diversos canales en la Región de Aysén.
 
 Existen diversas condiciones asociadas a la temperatura, movimiento y concentraciones en el agua que deben considerarse, por lo que es revelante estudiar y comprender los procesos de transferencia de propiedades como calor, momentum y masa generados en el sistema (en este caso el mar) que permiten el desarrollo de esta importante industria para el país (Consejo del Salmón, 2025).
 
