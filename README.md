@@ -34,19 +34,19 @@ En este modelo, se estudia la transferencia de masa de oxígeno ($O_2$) dentro d
 
 ### Condiciones de borde
 
-* Condición de borde 1: La concentración de oxígeno en la interfase aire-agua será la concentración del aire.
+* **Condición de borde 1**: La concentración de oxígeno en la interfase aire-agua será la concentración del aire.
 
   $\omega_A(x, z=0)=\omega_{A,aire}$
 
-* Condición de borde 2: El gradiente de la concentración de oxígeno en el costado derecho de la jaula es $0$.
+* **Condición de borde 2**: El gradiente de la concentración de oxígeno en el costado derecho de la jaula es $0$.
 
   $\omega_{Ax}(x=L,z)=0$
 
-* Condición de borde 3: La concentración de oxígeno al final de la jaula, se considera que es un valor conocido, debido a que se sabe que la biodiversidad del mar genera este mismo.
+* **Condición de borde 3**: La concentración de oxígeno al final de la jaula, se considera que es un valor conocido, debido a que se sabe que la biodiversidad del mar genera este mismo.
 
   $\omega_A(x,z=H)=\omega_{A,fondo}$
 
-* Condición de borde 4: La concentración de oxígeno en el costado izquierdo de la jaula se conoce, se estima que es la concentración de oxígeno en el mar.
+* **Condición de borde 4**: La concentración de oxígeno en el costado izquierdo de la jaula se conoce, se estima que es la concentración de oxígeno en el mar.
 
   $\omega_A(x=0,z)=\omega_{A,mar}$
 
