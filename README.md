@@ -119,6 +119,8 @@ $f=-V_{O_2}\cdot N_k\cdot W_k\cdot \frac{1}{VT}$
 
 Luego, para discretizar las condiciones de borde se usan diferencias finitas de segundo orden para las primeras derivadas:
 
+Reordenando y factorizando, se obtiene:
 
+$\omega_{i+1,j} \cdot \frac{\kappa}{\Delta x^2}+\omega_{i-1,j} \cdot (\frac{\kappa}{\Delta x^2}-\frac{V_x}{\Delta x})+\omega_{i,j+1} \cdot \frac{\kappa}{\Delta z^2}+\omega_{i,j-1}\cdot (\frac{\kappa}{\Delta z^2}-\frac{V_z}{\Delta z})+\omega_{i,j}\cdot (\frac{V_x}{\Delta x}+\frac{V_z}{\Delta z}-\frac{2\kappa}{\Delta x^2})-\frac{2\kappa}{\Delta z^2}=0$
 
 ## Instrucciones de ejecución del modelo
