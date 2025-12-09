@@ -59,11 +59,13 @@ En la siguiente figura, se tiene un esquema que sintetiza algunos de los supuest
 
 A partir de diversas fuentes e investigaciones, se determinó utilizar la ecuación de advección-difusión y un modelo del consumo de oxígeno del salmón para estimar la distribución espacial del oxígeno, donde la variable de estado $\omega(x, y, z, t)$ representa la concentración de oxígeno disuelto en mg/L, siendo esta la más empleada en diversos papers. 
 
-$\frac{\partial\omega}{\partial t}+V_x\frac{\partial\omega}{\partial x}+V_y\frac{\partial\omega}{\partial y}+V_z\frac{\partial\omega}{\partial z}+\kappa_h\frac{\partial^2\omega}{\partial x^2}$
+$\frac{\partial\omega}{\partial t}+V_x\frac{\partial\omega}{\partial x}+V_y\frac{\partial\omega}{\partial y}+V_z\frac{\partial\omega}{\partial z}+\kappa_h(\frac{\partial^2\omega}{\partial x^2}+\frac{\partial^2\omega}{\partial y^2})+\kappa_v\frac{\partial^2\omega}{\partial z^2}=\alpha-\sigma$
 
-Para modelar la dinámica de $\omega(x, y, z, t)$, considerando que se desprecian los efectos en el eje $y$, usamos:
+Considerando que se desprecian los efectos en el eje $y$, la expresión se reduce a la siguiente:
 
-“Donde vx(x,y,z) y vz(x,y,z) dan las componentes horizontal y vertical del vector de corriente, κh y κv son los coeficientes de difusión horizontal y vertical para DO, α(x, y, z, t) la tasa de adición de oxígeno y σ(x, y, z, t) la tasa de consumo de oxígeno” (Alver et al., 2022).
+$\frac{\partial\omega}{\partial t}+V_x\frac{\partial\omega}{\partial x}+V_z\frac{\partial\omega}{\partial z}+\kappa_h\frac{\partial^2\omega}{\partial x^2}+\kappa_v\frac{\partial^2\omega}{\partial z^2}=\alpha-\sigma$
+
+$V_x(x,y,z)$ y $V_z(x,y,z)$ corresponden a las componentes horizontal y vertical del vector de corriente, $\kappa_h$ y $\kappa_v$ son los coeficientes de difusión horizontal y vertical para DO, $α(x, y, z, t)$ la tasa de adición de oxígeno y $σ(x, y, z, t)$ la tasa de consumo de oxígeno.
 
 Para determinar  κh y κv, en la práctica dependen de diversos factores. Sin embargo, por simplicidad, se considera  κh = κv = κ , lo cual es un modelo razonable (Alver et al., 2022). 
 
