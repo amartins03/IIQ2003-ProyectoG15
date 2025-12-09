@@ -14,19 +14,19 @@ Este proyecto tiene como objetivo implementar un modelo de transferencia de masa
 
 En este modelo, se estudia la transferencia de masa de oxígeno ($O_2$) dentro de una jaula salmonera cuadrada sumergida en agua de mar, la cual corresponde al sistema del modelo. Este sistema es además replicable para todas las jaulas presentes en una planta salmonera en Puerto Montt. 
 
-### Supuestos
+### Supuestos del modelo
 
 * No hay velocidad ni variaciones en el eje $y$.
 * La tasa de adición de oxígeno es $0$, por lo que $\alpha$ se anula.
-* Se modelará sólo una jaula con dimensones $30 m$ (largo) $x 30 m$ (ancho) $x 15 m$ (profundidad)). Modelar más de una jaula es más complejo, ya que una jaula puede recibir agua parcialmente desoxigenada al pasar por las jaulas aguas arriba (Alver et al., 2024).
+* Se modelará sólo una jaula con dimensones $30$ m (largo) x $30$ m (ancho) x $15$ m (profundidad)). Modelar más de una jaula es considerablemente más complejo, ya que una jaula puede recibir agua parcialmente desoxigenada al pasar por las jaulas aguas arriba (Alver et al., 2024).
 * Se considera una distribución normal de los salmones en la jaula. Hay que destacar que puede ser fuente de imprecisiones.
 * Cada salmón tiene una velocidad de $U$.
-* Cada salmón tiene un peso $P = 3 kg$ (SalmonChile,s.f.) 
-* Se considera que el salmón siempre está en movimiento (con velocidad constante).
-* Condiciones dentro de la jaula: Constantes físicas se mantienen,  (densidad agua),  (viscosidad) , p (presión agua).
-* Condiciones del mar constantes: temperatura de Tmar= 13.3 °C y una velocidad de 0.35 km/h o 0.0972 m/s (Mar y Oleaje - Meteoblue, s. f.).
-* La concentración inicial se asume igual a 0.
-* Para la difusión de oxígeno en agua a 13 °C, se puede estimar que el coeficiente de difusión es de 210-9m2s (Rahlff et al., 2019).
+* Cada salmón tiene un peso $P$ = $3$ kg (SalmonChile,s.f.) 
+* Se considera que el salmón siempre está en movimiento y con velocidad constante.
+* Condiciones dentro de la jaula: Constantes físicas se mantienen, $\rho$ (densidad agua), $\mu$ (viscosidad) y $p$ (presión agua).
+* Condiciones del mar constantes: temperatura de $T^{mar}_{\infty}$= $13.3$ °C y una velocidad de $0.35$ km/h o $0.0972$ m/s (Mar y Oleaje - Meteoblue, s. f.).
+* La concentración inicial se asume igual a $0$.
+* Para la difusión de oxígeno en agua a $13$ °C, se puede estimar que el coeficiente de difusión es de $2*10^{-9}$ m^2/s (Rahlff et al., 2019).
 * La concentración de oxígeno en el mar es de 6,5 mL/L aproximadamente (rango de 5-8 mL/L), que transformando usando el volumen molar de un gas ideal, se obtiene que es 0,29 molm3  (Silva, 2006, p. 37).
-* La concentración de oxígeno en la interfase aire-agua se estima en 0,329 molm3 (U.S. Geological Survey, 2018)).
+* La concentración de oxígeno en la interfase aire-agua se estima en $0,329$ mol/m^3 (U.S. Geological Survey, 2018)).
 * La concentración de oxígeno en el fondo se asume mayor que en la interfase, ya que se asume mayor riqueza de oxígeno por biodiversidad. Por lo que se asume en 1 molm3.
