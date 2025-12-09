@@ -8,6 +8,8 @@ Existen diversas condiciones asociadas a la temperatura, movimiento y concentrac
 
 Sin embargo, en los últimos años, la UNESCO ha alertado sobre la creciente acidificación de los océanos, debido principalmente a un aumento de la concentración de dióxido de carbono ($CO_2$) disuelto en el agua. Esto, junto con la generación de 1,4 toneladas de lodo ligadas a la producción de 1 tonelada de salmones, constituyen los principales desafíos de la industria salmonera.
 
-Este proyecto tiene como objetivo implementar un modelo de transferencia de masa mediante modelación teórica-matemática y computacional, permitiendo la optimización de la disponibilidad de oxígeno en una jaula de salmones y reducir el impacto ambiental y mejorar la destinación de recursos en esta industria. Los datos utilizados corresponden a salmoneras ubicadas en Puerto Montt, Región de Los Lagos, Chile.
+Este proyecto tiene como objetivo implementar un modelo de transferencia de masa mediante modelación teórica-matemática y computacional, permitiendo la optimización de la disponibilidad de oxígeno en una jaula de salmones y reducir el impacto ambiental y mejorar la destinación de recursos en esta industria. Los datos utilizados corresponden a propiedades de las salmoneras ubicadas en Puerto Montt, Región de Los Lagos, Chile.
 
-## 
+## Características del modelo
+
+En este modelo, se estudia la transferencia de masa en el agua, siendo el compuesto estudiado el oxígeno. Este modelo 
