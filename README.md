@@ -156,6 +156,5 @@ Para ejecutar el modelo, se deben tener en cuenta las siguientes consideraciones
 * Respecto al punto anterior, se recomienda ejecutar el código completo con la función "Ejecutar todo", ya que esta corre desde la primera a la última en orden e ininterrumpidamente.
 * Para los bloques de discretización, el código usualmente tardará desde 4 a 80 minutos en devolver resultados en la consola, dependiendo de la complejidad del algoritmo.
 
-## Resultados
-
+## Resultados obtenidos
 
