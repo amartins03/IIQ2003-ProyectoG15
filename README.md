@@ -12,14 +12,14 @@ Este proyecto tiene como objetivo implementar un modelo de transferencia de masa
 
 ## Características del modelo
 
-En este modelo, se estudia la transferencia de masa de oxígeno ($O_2$) dentro de una jaula salmonera cuadrada sumergida en agua de mar, la cual corresponde al sistema del modelo. Este sistema es además replicable para todas las jaulas presentes en una planta salmonera en Puerto Montt. 
+En este modelo, se estudia la transferencia de masa de oxígeno ($O_2$) dentro de una jaula salmonera cuadrada sumergida en agua de mar, la cual corresponde al sistema del modelo. Este sistema es además replicable para todas las jaulas presentes en una planta salmonera en Puerto Montt. En la siguiente figura se presenta un esquema del sistema modelado:
 
-![Test](Figuras/Esquema.jpeg)
+![Esquema del sistema modelado](Figuras/Esquema.jpeg)
 
 ### Supuestos del modelo
 
 * Se considera estado estacionario, por lo que no existe variación de concentración respecto al tiempo.
-* No hay velocidad ni variaciones en el eje $y$.
+* Se tiene un sistema bidimensional, donde existe transferencia de masa en las direcciones $x$ y $z$. No hay velocidad ni variaciones en el eje $y$.
 * La tasa de adición de oxígeno es $0$, por lo que $\alpha$ se anula.
 * Se modelará sólo una jaula con dimensones $30$ m (largo) x $30$ m (ancho) x $15$ m (profundidad)). Modelar más de una jaula es considerablemente más complejo, ya que una jaula puede recibir agua parcialmente desoxigenada al pasar por las jaulas aguas arriba (Alver et al., 2024).
 * Se considera una distribución normal de los salmones en la jaula. Hay que destacar que puede ser fuente de imprecisiones.
