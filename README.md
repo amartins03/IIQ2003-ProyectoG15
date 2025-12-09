@@ -17,11 +17,11 @@ En este modelo, se estudia la transferencia de masa de oxígeno ($O_2$) dentro d
 ### Supuestos
 
 * No hay velocidad ni variaciones en el eje $y$.
-* La tasa de adición de oxígeno es 0, por lo que $\alpha$ se anula.
-* Se modelará solo 1 jaula (30 (largo) x 30 (ancho) x 15 (profundidad)) mts. Modelar más de una jaula es más complejo, ya que una jaula puede recibir agua parcialmente desoxigenada al pasar por las jaulas aguas arriba (Alver et al., 2024).
+* La tasa de adición de oxígeno es $0$, por lo que $\alpha$ se anula.
+* Se modelará sólo una jaula con dimensones $30 m$ (largo) $x 30 m$ (ancho) $x 15 m$ (profundidad)). Modelar más de una jaula es más complejo, ya que una jaula puede recibir agua parcialmente desoxigenada al pasar por las jaulas aguas arriba (Alver et al., 2024).
 * Se considera una distribución normal de los salmones en la jaula. Hay que destacar que puede ser fuente de imprecisiones.
-* Cada salmón tiene una velocidad de U.
-* Cada salmón tiene un peso P = 3 kg (SalmonChile,s.f.) 
+* Cada salmón tiene una velocidad de $U$.
+* Cada salmón tiene un peso $P = 3 kg$ (SalmonChile,s.f.) 
 * Se considera que el salmón siempre está en movimiento (con velocidad constante).
 * Condiciones dentro de la jaula: Constantes físicas se mantienen,  (densidad agua),  (viscosidad) , p (presión agua).
 * Condiciones del mar constantes: temperatura de Tmar= 13.3 °C y una velocidad de 0.35 km/h o 0.0972 m/s (Mar y Oleaje - Meteoblue, s. f.).
