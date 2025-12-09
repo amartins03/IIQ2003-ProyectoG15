@@ -32,7 +32,7 @@ $V_{O_2}=0.0171\cdot P^{-0,33}\cdot1.03^T\cdot1.79^U$
 
 Donde $P$ es el peso corporal (kg), $T$ es la temperatura del agua (°C) y $U$ es la velocidad de nado (longitudes corporales por segundo). Se considera $U$ con un valor de $2.2$ longitudes corporales por segundo, el valor más bajo contabilizado por Alver et al. (2022). 
 
-La población, distribuida normalmente, corresponde a solo un grupo para nuestro caso, donde hay un número de individuos (Nk) y un peso corporal individual medio (Wk) (Alver et al., 2022). 
+La población, distribuida normalmente, corresponde a solo un grupo para nuestro caso, donde hay un número de individuos ($N_k$) y un peso corporal individual medio ($W_k$) (Alver et al., 2022). 
 
 $\sigma(x, y, z, t)=V_{O_2}\cdot N_k\cdot W_k\cdot \beta(x, y, z, t)$
 
@@ -86,10 +86,39 @@ En la siguiente figura, se tiene un esquema que sintetiza algunos de los supuest
 
 ### Método numérico del modelo
 
-El método numérico a implementar es el método iterativo de sobre-relajación sucesiva (de siglas en inglés SOR), después de aplicar Diferencias Finitas a la ecuación resultante del modelo.
+El método numérico a implementar es el método iterativo de sobre-relajación sucesiva (de siglas en inglés SOR), después de aplicar diferencias finitas a la ecuación resultante del modelo.
 
 Se busca que la EDP del modelo que expresada como un sistema de ecuaciones lineales utilizando diferencias finitas. En este sistema, se definen coeficientes que son matrices y acompañan a su respectivo nodo en cada una de las iteraciones: a, b, c, d, e y f. A partir de estos, se puede calcular el residuo total en cada iteración, el cual corresponde a la diferencia entre el valor correcto de la EDP y la aproximación que calcula el algoritmo SOR. También, se deben discretizar las condiciones de borde del problema.
 Para su implementación en Python, se deben definir los parámetros y la grilla que se usará en la resolución, cuidando que haya la suficiente cantidad de puntos a analizar en ella y que estén correctamente espaciados. Después de definir los coeficientes y las condiciones de borde, se implementa un bucle while que busca disminuir el residuo total, el cual se recalcula en cada una de las iteraciones con los nuevos valores, hasta alcanzar la tolerancia establecida.
+
+Para discretizar el modelo:
+
+$V_x\frac{\partial\omega}{\partial x}+V_z\frac{\partial\omega}{\partial z}+\kappa(\frac{\partial^2\omega}{\partial x^2}+\frac{\partial^2\omega}{\partial z^2})=V_{O_2}\cdot N_k\cdot W_k\cdot \frac{1}{VT}$
+
+Se aplicaron diferencias finitas a cada uno de los términos de la ecuación. Para las derivadas de primer orden, correspondientes a la transferencia por convección (o advección), se usa aproximación hacia atrás de primer orden. Por otra parte, las derivadas de segundo orden se usa la aproximación central de segundo orden.
+
+$V_x\frac{\partial\omega}{\partial x}=V_x\cdot \frac{\omega_{i,j}-\omega_{i-1,j}}{\Delta x}$
+
+$V_z\frac{\partial\omega}{\partial z}=V_z\cdot \frac{\omega_{i,j}-\omega_{i,j-1}}{\Delta z}$
+
+$\kappa(\frac{\partial^2\omega}{\partial x^2}+\frac{\partial^2\omega}{\partial z^2})=\kappa \cdot (\frac{\omega_{i+i,j}-2\omega_{i,j}+\omega_{i-1,j}}{\Delta x^2} + \frac{\omega_{i,j+1}-2\omega_{i,j}+\omega_{i,j-1}}{\Delta z^2})$
+
+Se definen los coeficientes:
+
+$a=\frac{\kappa}{\Delta x^2}$
+
+$b=\frac{\kappa}{\Delta x^2}-\frac{V_x}{\Delta x}$
+
+$c=\frac{\kappa}{\Delta z^2}$
+
+$d=\frac{\kappa}{\Delta z^2}-\frac{V_z}{\Delta z}$
+
+$e=\frac{V_x}{\Delta x}+\frac{V_z}{\Delta z}-\frac{2\kappa}{\Delta x^2}-\frac{2\kappa}{\Delta z^2}$
+
+$f=-V_{O_2}\cdot N_k\cdot W_k\cdot \frac{1}{VT}$
+
+Luego, para discretizar las condiciones de borde se usan diferencias finitas de segundo orden para las primeras derivadas:
+
 
 
 ## Instrucciones de ejecución del modelo
