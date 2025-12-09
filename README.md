@@ -14,7 +14,7 @@ Este proyecto tiene como objetivo implementar un modelo de transferencia de masa
 
 En este modelo, se estudia la transferencia de masa de oxígeno ($O_2$) dentro de una jaula salmonera cuadrada sumergida en agua de mar, la cual corresponde al sistema del modelo. Este sistema es además replicable para todas las jaulas presentes en una planta salmonera en Puerto Montt. 
 
-
+![alt text](Esquema del modelo.jpeg)
 
 ### Supuestos del modelo
 
